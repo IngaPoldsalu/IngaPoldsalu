@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Sleep analysis in R language </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Inga Põldsalu</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">Portfolio</a></li>
+
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/inga-p%C3%B5ldsalu-62a19a61/" target="_blank"
+                        class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/grecebo" target="_blank" class="icon brands alt fa-github"><span
+                            class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <span class="date">October 15, 2023</span>
+                    <h1>Sleep analysis in R language</h1>
+                    <p>Sleep and breastfeeding study of my daughter aged 2-16 months.<br />
+                        The data is collected throught the Glow app where the father and I input data manually.<br />
+                    </p>
+                </header>
+                <p>We started documenting data when our daughter was a little over a month old, as we navigated the
+                    uncertainties of standard newborn behaviors. Being deeply engaged with her often made it difficult
+                    to monitor time, and admittedly, the postpartum memory isn't exactly renowned for its reliability.
+                    Reviewing the recorded data helped us determine if her fussiness stemmed from lack of sleep or
+                    hunger, or if there might be another underlying issue.
+                    <br />Here are the links to the
+                    <a href="https://www.kaggle.com/datasets/grecebo/daughter-glow-data-feb10-to-jun9/code">dataset</a>
+                    and for the R-language <a
+                        href="https://www.kaggle.com/code/grecebo/sleep-analysis-of-my-daughter-at-2-16-months">code</a>
+                    in Kaggle.<br />
+                </p>
+                <h2>Sleep analysis</h2>
+                <p>A summarized tile chart displays her daily sleep and breastfeeding patterns, spanning from 12 AM to
+                    12 AM the following day.:
+                <p>
+                <!-- <div class="image main"><img src="images/Sleep_Study/sleep_bf_chart.jpeg" alt="" /></div> -->
+                <a href="images/Sleep_Study/sleep_bf_chart.jpeg" target="_blank" class="image main"><img src="images/Sleep_Study/sleep_bf_chart.jpeg" alt="" /></a>
+                <!-- <a href="/Sleep-study.html"  class="image main"><img src="images/Sleep_Study/sleep_bf_chart.jpeg" alt="" /></a> -->
+                <p>Here is the annotated version of the 24-hour chart:
+                <p>
+                <div class="image main"><img src="images//Sleep_Study/sleep_bf_chart_annotated.jpeg" alt="" /></div>
+                <p>We began implementing a sleep schedule when she was 6.5 months old. By extending her wake periods,
+                    she seamlessly adapted to the new routine from day one. Initially, we aimed for a three-nap
+                    schedule, but her naps were so extended that fitting in a third nap became impossible.<br />
+                    At 14 months, she started kindergarten, necessitating a shift to a one-nap routine. This adjustment
+                    proved challenging as she wasn't accustomed to longer wakeful periods, leading to some cranky
+                    evenings. However, after about two weeks, she settled comfortably into the new routine.
+                <p>
+                <div class="image main"><img src="images/Sleep_Study/Sleep_Duration_per_Day.jpeg" alt="" /></div>
+                <p>From the sleep duration graph, we can see a rise in her daily sleep duration until the third month,
+                    likely a result of her mastering nap linking. The introduction of a sleep schedule at 6.5 months
+                    appears to have had a marginally positive impact on her sleep length. Post the 14-month mark, the
+                    graph displays increased fluctuations, possibly due to her daytime naps at the kindergarten. There,
+                    she naps outdoors in a stroller, exposing her to more potential disturbances. Conversely, at home
+                    during weekends, she enjoys an optimal nap environment in her bed, with blackout curtains and white
+                    noise ensuring a superior nap experience. <br />
+                    Overall, she seems to have slept soundly, with only brief night-time awakenings for breastfeeding.
+                </p>
+                <div class="image main"><img src="images/Sleep_Study/Sleep_Duration_per_Day_by_Sleep_Type.jpeg"
+                        alt="" /></div>
+                <p>In the 'Sleep Duration by Sleep Type' chart, I've categorized her sleep into 'Night Sleep' and
+                    'Naps'. It's evident that her night sleep stabilized from the third month onward, while her nap
+                    durations saw a significant decline from the third month, leveling off from the fifth month.
+                    However, upon starting kindergarten, her nap durations began to decrease once more.
+                <p>
+                <h2>Breastfeeding analysis</h2>
+                <div class="image main"><img src="images/Sleep_Study/Daily_Breastfeeding_Duration.jpeg" alt="" /></div>
+                <p>From the 24-hour chart, her breastfeeding appears somewhat sporadic. However, a discernible pattern
+                    emerges, with feedings often occurring just before and after naps. Since she began kindergarten, she
+                    hasn't been breastfeeding during those hours, but the pattern persists during weekends.
+                    Interestingly, the duration of breastfeeding hasn't decreased with her start at kindergarten. In
+                    fact, there are indications of an uptick. This could perhaps be attributed to her seeking more
+                    comfort and closeness after spending time in the kindergarten environment.
+                <p>
+                <div class="image main"><img src="images/Sleep_Study/No_of_Breastfeedings_a_Day.jpeg" alt="" /></div>
+                <p>Interestingly, while the duration of breastfeeding has remained relatively consistent, the frequency
+                    of breastfeeding sessions has seen more fluctuations. A noticeable increase is evident in the recent
+                    months. This could be attributed to her time in kindergarten. However, another contributing factor
+                    could be the 15-month vaccine, to which she had a reaction, manifesting as a fever, development of a
+                    rash, and
+                    increased fussiness.
+                <p>
+                <p>Overall, delving into this dataset was both enlightening and a valuable exercise in R programming. It
+                    provided insights into her sleep and breastfeeding patterns.</p>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+
+                        <li><a href="https://www.linkedin.com/in/inga-p%C3%B5ldsalu-62a19a61/" target="_blank"
+                                class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/grecebo" target="_blank" class="icon brands alt fa-github"><span
+                                    class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </footer>
+        </div>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul>
+                <li>&copy; Untitled</li>
+                <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
